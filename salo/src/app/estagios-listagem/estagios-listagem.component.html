@@ -1,0 +1,25 @@
+
+
+<h2 class="text-center">Estágios Disponíveis</h2>
+<div class="container">
+  <table class="table table-striped" >
+    <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Empresa</th>
+        <th scope="col">Curso</th>
+        <th scope="col">Área</th>
+        <th scope="col">Tempo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let estagio of estagios">
+        <th scope="row">{{ estagio.id }}</th>
+        <td>{{ estagio.empresa }}</td>
+        <td>{{ estagio.curso }}</td>
+        <td>{{ estagio.area }}</td>
+        <td>{{ estagio.tempo }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
